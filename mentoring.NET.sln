@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection1", "Reflection\R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection2", "Reflection2\Reflection2.csproj", "{13D83416-53E7-4779-B647-8D8A77FEAB97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCLAttribute", "BCLAttribute\BCLAttribute.csproj", "{DDB59A92-084B-41E6-836A-10225AB5855E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{13D83416-53E7-4779-B647-8D8A77FEAB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13D83416-53E7-4779-B647-8D8A77FEAB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13D83416-53E7-4779-B647-8D8A77FEAB97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB59A92-084B-41E6-836A-10225AB5855E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB59A92-084B-41E6-836A-10225AB5855E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB59A92-084B-41E6-836A-10225AB5855E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB59A92-084B-41E6-836A-10225AB5855E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
