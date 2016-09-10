@@ -19,9 +19,9 @@ namespace Types2
 
     public struct Product
     {
-        private string name;
-        private int count;
-        private int cost;
+        public readonly string name;
+        public readonly int count;
+        public readonly int cost;
 
         public Product(string name, int count, int cost)
         {
