@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types2", "Types2\Types2.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types1", "Types1\Types1.csproj", "{9A452F48-D966-490F-ADCF-603EDA12035B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM", "ORM\ORM.csproj", "{05156EDE-7B9D-4F44-9FA6-5A0C636A0656}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{9A452F48-D966-490F-ADCF-603EDA12035B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A452F48-D966-490F-ADCF-603EDA12035B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A452F48-D966-490F-ADCF-603EDA12035B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05156EDE-7B9D-4F44-9FA6-5A0C636A0656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05156EDE-7B9D-4F44-9FA6-5A0C636A0656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05156EDE-7B9D-4F44-9FA6-5A0C636A0656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05156EDE-7B9D-4F44-9FA6-5A0C636A0656}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
