@@ -17,11 +17,11 @@ namespace ORM.Model
         public int TerritoryID { get; set; }
 
         [NotColumn]
-        [Association(ThisKey = "EmployeeID", OtherKey = "ID")]
+        [Association(ThisKey = "EmployeeID", OtherKey = "ID", BackReferenceName = "EmployeeTerritory")]
         public Employee Employee { get; set; }
 
         [NotColumn]
-        [Association(ThisKey = "TerritoryID", OtherKey = "ID")]
-        public Region Region { get; set; }
+        [Association(ThisKey = "TerritoryID", OtherKey = "ID", BackReferenceName = "EmployeeTerritory")]
+        public Territory Territory { get; set; }
     }
 }

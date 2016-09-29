@@ -19,7 +19,7 @@ namespace ORM
 
         public ITable<Supplier> Supplier { get { return GetTable<Supplier>(); } }
 
-        public ITable<Region> Region { get { return GetTable<Region>(); } }
+        public ITable<Territory> Territory { get { return GetTable<Territory>(); } }
 
         public ITable<Employee> Employee { get { return GetTable<Employee>(); } }
 
@@ -39,11 +39,17 @@ namespace ORM
             using (var db = new DbNorthwind())
             {
                 LinqToDB.Common.Configuration.Linq.AllowMultipleQuery = true;
-                var regions = 
+            
+                var territories = 
                 (
                     from e in db.Employee
-                    select e.GetRegions().Count()
+                    select e.GetTerritories()
                 ).ToList();
+
+                for (int i = 0; i < territories.Count; i++)
+                {
+                    territories[i] = territories[i].ToList();
+                }
 
                 var employees =
                 (
@@ -51,9 +57,9 @@ namespace ORM
                     select e
                 ).ToList();
 
-                for (int i = 0; i < regions.Count; i++)
+                for (int i = 0; i < territories.Count; i++)
                 {
-                    Console.WriteLine($"{employees[i].LastName}: {regions[i]}");
+                    Console.WriteLine($"{employees[i].LastName}: {string.Join(",", territories[i])}");
                 }
                 Console.WriteLine();
             }
@@ -66,19 +72,19 @@ namespace ORM
                 LinqToDB.Common.Configuration.Linq.AllowMultipleQuery = true;
                 var employees =
                 (
-                    from r in db.Region
-                    select r.GetEmployees().Count()
+                    from t in db.Territory
+                    select t.GetEmployees().Count()
                 ).ToList();
 
-                var regions =
+                var territories =
                 (
-                    from r in db.Region
+                    from r in db.Territory
                     select r
                 ).ToList();
 
-                for (int i = 0; i < regions.Count; i++)
+                for (int i = 0; i < territories.Count; i++)
                 {
-                    Console.WriteLine($"{regions[i].Description}: {employees[i]}");
+                    Console.WriteLine($"{territories[i].Description}: {employees[i]}");
                 }
             }
         }

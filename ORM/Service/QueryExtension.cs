@@ -11,26 +11,26 @@ namespace ORM.Service
 {
     static class QueryExtension
     {
-        [ExpressionMethod("RegionsImpl")]
-        public static IEnumerable<Region> GetRegions(this Employee employee)
+        [ExpressionMethod("EmployesImpl")]
+        public static IEnumerable<Territory> GetTerritories(this Employee employee)
         {
-            return RegionsImpl().Compile()(employee);
+            return TerritoryImpl().Compile()(employee);
         }
 
         [ExpressionMethod("EmployesImpl")]
-        public static IEnumerable<int> GetEmployees(this Region region)
+        public static IEnumerable<Employee> GetEmployees(this Territory territory)
         {
-            return EmployesImpl().Compile()(region);
+            return EmployesImpl().Compile()(territory);
         }
         
-        static Expression<Func<Employee, IEnumerable<Region>>> RegionsImpl()
+        static Expression<Func<Employee, IEnumerable<Territory>>> TerritoryImpl()
         {
-            return e => e.EmployeeTerritory.Select(r => r.Region);
+            return e => e.EmployeeTerritory.Select(r => r.Territory);
         }
 
-        static Expression<Func<Region, IEnumerable<int>>> EmployesImpl()
+        static Expression<Func<Territory, IEnumerable<Employee>>> EmployesImpl()
         {
-            return r => r.EmployeeTerritory.Select(e => e.EmployeeID);
+            return r => r.EmployeeTerritory.Select(e => e.Employee);
         }
     }
 }

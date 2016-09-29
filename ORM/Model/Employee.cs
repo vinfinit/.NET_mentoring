@@ -18,7 +18,7 @@ namespace ORM.Model
         public string LastName { get; set; }
 
         [NotColumn]
-        [Association(ThisKey = "ID", OtherKey = "EmployeeID")]
+        [Association(ThisKey = "ID", OtherKey = "EmployeeID", IsBackReference = true)]
         public ICollection<EmployeeTerritory> EmployeeTerritory { get; set; }
     }
 }

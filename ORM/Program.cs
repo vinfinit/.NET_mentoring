@@ -25,6 +25,7 @@ namespace ORM
                 Console.WriteLine(p.Name, p.Category.CategoryName, p.Supplier.CompanyName);
             }
             Console.WriteLine(products.Count());
+            Console.WriteLine();
         }
     }
 }

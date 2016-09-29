@@ -52,8 +52,8 @@
     <Compile Include="Model\Employee.cs" />
     <Compile Include="Model\EmployeeTerritory.cs" />
     <Compile Include="Model\Product.cs" />
-    <Compile Include="Model\Region.cs" />
     <Compile Include="Model\Supplier.cs" />
+    <Compile Include="Model\Territory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\QueryExtension.cs" />
