@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types1", "Types1\Types1.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM", "ORM\ORM.csproj", "{05156EDE-7B9D-4F44-9FA6-5A0C636A0656}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{5D122D90-AC4B-40C7-8EB3-8871915664C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{05156EDE-7B9D-4F44-9FA6-5A0C636A0656}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05156EDE-7B9D-4F44-9FA6-5A0C636A0656}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05156EDE-7B9D-4F44-9FA6-5A0C636A0656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D122D90-AC4B-40C7-8EB3-8871915664C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D122D90-AC4B-40C7-8EB3-8871915664C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D122D90-AC4B-40C7-8EB3-8871915664C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D122D90-AC4B-40C7-8EB3-8871915664C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
