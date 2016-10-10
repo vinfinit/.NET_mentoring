@@ -12,7 +12,7 @@ namespace ORM.Model
     {
         [PrimaryKey, Identity]
         [Column(Name = "TerritoryID")]
-        public int ID { get; set; }
+        public string ID { get; set; }
 
         [Column(Name = "TerritoryDescription")]
         public string Description { get; set; }

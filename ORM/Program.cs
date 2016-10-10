@@ -14,6 +14,7 @@ namespace ORM
             PrintCollection(DbNorthwind.Task2_1());
             DbNorthwind.Task2_2();
             DbNorthwind.Task2_3();
+            DbNorthwind.Task3_1();
             DbNorthwind.Task3_2();
             Console.ReadLine();
         }

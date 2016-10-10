@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LinqToDB;
+using LinqToDB.Data;
+using LinqToDB.DataProvider.SqlServer;
 using ORM.Model;
 using ORM.Service;
 
@@ -86,6 +88,37 @@ namespace ORM
                 {
                     Console.WriteLine($"{territories[i].Description}: {employees[i]}");
                 }
+            }
+        }
+
+        public static void Task3_1()
+        {
+            int employeeID = 13321;
+            using (var db = new DbNorthwind())
+            {
+                db.Execute("SET IDENTITY_INSERT EMPLOYEES ON");
+
+                db.Employee.InsertWithIdentity(
+                    () => new Employee()
+                    {
+                        ID = employeeID,
+                        FirstName = "Test",
+                        LastName = "User"
+                    });
+
+                db.EmployeeTerritory.Insert(
+                    () => new EmployeeTerritory()
+                    {
+                        EmployeeID = employeeID,
+                        TerritoryID = "01581"
+                    });
+
+                db.EmployeeTerritory.Insert(
+                    () => new EmployeeTerritory()
+                    {
+                        EmployeeID = employeeID,
+                        TerritoryID = "01730"
+                    });
             }
         }
 

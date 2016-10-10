@@ -15,6 +15,9 @@ namespace ORM.Model
         public int ID { get; set; }
 
         [Column]
+        public string FirstName { get; set; }
+
+        [Column]
         public string LastName { get; set; }
 
         [NotColumn]

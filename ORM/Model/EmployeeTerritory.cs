@@ -14,7 +14,7 @@ namespace ORM.Model
         public int EmployeeID { get; set; }
 
         [Column]
-        public int TerritoryID { get; set; }
+        public string TerritoryID { get; set; }
 
         [NotColumn]
         [Association(ThisKey = "EmployeeID", OtherKey = "ID", BackReferenceName = "EmployeeTerritory")]
