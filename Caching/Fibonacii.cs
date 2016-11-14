@@ -2,11 +2,11 @@
 
 namespace Caching
 {
-	class FibonacciNumbers
+	class Fibonacii
 	{
 		private IFibonaciiCache _cache;
 
-		public FibonacciNumbers(IFibonaciiCache cache)
+		public Fibonacii(IFibonaciiCache cache)
 		{
 			if (cache == null)
 			{
