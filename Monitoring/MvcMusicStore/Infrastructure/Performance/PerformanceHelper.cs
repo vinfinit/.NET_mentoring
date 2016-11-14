@@ -1,20 +1,13 @@
 ﻿using System.Diagnostics;
-using PerformanceCounterConstants;
+using Monitoring;
 
 namespace MvcMusicStore.Infrastructure.Performance
 {
     public static class PerformanceHelper
     {
-        private static string _categoryName = MusicStorePerformanceConstants.CategoryName;
-
-        public static string CategoryName
-        {
-            get { return _categoryName; }
-        }
-
         public static void IncrementCounter(string counterName)
         {
-            using (var counter = new PerformanceCounter(_categoryName, counterName, false))
+            using (var counter = new PerformanceCounter(LogCounterConstants.CategoryName, counterName, false))
             {
                 counter.Increment();
             }
